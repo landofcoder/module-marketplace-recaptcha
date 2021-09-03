@@ -1,0 +1,36 @@
+{
+    "name": "landofcoder/module-marketplace-recaptcha",
+    "description": "Magento 2 Recaptcha for Marketplace Seller Create Account page.",
+    "keywords": [
+      "magento 2",
+      "recaptcha",
+      "marketplace",
+      "seller create account"
+    ],
+    "license": "OSL-3.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Landofcoder",
+            "email": "info@landofcoder.com",
+            "role": "Magento 2 Extension Provider",
+            "homepage": "https://landofcoder.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "landofcoder/module-recaptcha": "1.*"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "4.1.0"
+    },
+    "type": "magento2-module",
+    "autoload": {
+        "psr-4": {
+            "Lof\\MarketPlaceRecaptcha\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
