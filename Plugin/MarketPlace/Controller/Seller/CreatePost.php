@@ -19,7 +19,7 @@
  * @license    https://landofcoder.com/LICENSE-1.0.html
  */
 
-namespace Lof\Recaptcha\Plugin\MarketPlace\Controller\Seller;
+namespace Lof\MarketPlaceRecaptcha\Plugin\MarketPlace\Controller\Seller;
 
 use Magento\Framework\Controller\Result\RedirectFactory;
 use Magento\Framework\Message\ManagerInterface;
@@ -62,12 +62,12 @@ class CreatePost
     /**
      * Execute around post
      *
-     * @param \Magento\Customer\Controller\Account\CreatePost $subject
+     * @param \Lof\MarketPlace\Controller\Seller\CreatePost $subject
      * @param \Closure $proceed
      * @return \Magento\Framework\Controller\Result\Redirect|mixed
      */
     public function aroundExecute(
-        \Magento\Customer\Controller\Account\CreatePost $subject,
+        \Lof\MarketPlace\Controller\Seller\CreatePost $subject,
         \Closure $proceed
     ) {
         if ($this->dataHelper->isEnabled() && $this->dataHelper->isEnabledSellerCreate()) {
