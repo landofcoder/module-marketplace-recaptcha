@@ -24,7 +24,7 @@ Secret Key -> from Recaptcha website
 #### Composer
 
 ```bash
-composer require landofcoder/module-seller-recaptcha
+composer require landofcoder/module-marketplace-recaptcha
 ```
 
 Enable Module
